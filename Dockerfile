@@ -4,5 +4,6 @@ COPY . .
 
 EXPOSE 4000
 
+
 CMD ["nodemon", "index.js"]
 
