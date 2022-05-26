@@ -51,7 +51,7 @@ const Navigate = () => {
                 Our Policies <i className="fas fa-caret-down" />
               </Link>
               <div className="menu-icon" onClick={handleClick}>
-                <i className={click ? "fas fa-times" : "fas fa-bars"} />
+             
               </div>
             </li>
             <li>
