@@ -10,7 +10,7 @@ const Navigate = () => {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
-//  const handleClick = () => setClick(!click);
+  const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
@@ -50,6 +50,9 @@ const Navigate = () => {
               <Link to="/">
                 Our Policies <i className="fas fa-caret-down" />
               </Link>
+              <div className="menu-icon" onClick={handleClick}>
+                <i className={click ? "fas fa-times" : "fas fa-bars"} />
+              </div>
             </li>
             <li>
               <Link to="/managepolicy">
@@ -61,7 +64,7 @@ const Navigate = () => {
                 Claims <i className="fas fa-caret-down" />
               </Link>
             </li>
-            
+
             <li
               className="nav-item"
               onMouseEnter={onMouseEnter}
