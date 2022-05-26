@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Claims from "./pages/Claims";
+import FaqClaim from './pages/FaqClaim';
+import Faq from "./pages/Faq";
+import OurPolicies from "./pages/OurPolicies";
+import FaqOurPolicy from "./pages/FaqOurPolicy";
+import ManagePolicy from "./pages/ManagePolicy";
+import ManagePolicyFaq from "./pages/ManagePolicyFaq";
+import Navigate from "./component/Navigate";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigate />
+      <Routes>
+        
+        <Route path="/" exact element={<OurPolicies />} />
+        <Route path="/managepolicy" exact element={<ManagePolicy />} />
+        <Route path="/claims" exact element={<Claims />} />
+        <Route path="/ourpolicyfaq" element={<FaqOurPolicy />} />
+        <Route path="/managepolicyfaq" exact element={<ManagePolicyFaq />} />
+        <Route path="/faqclaim" element={<FaqClaim />} />
+      </Routes>
     </div>
   );
 }
