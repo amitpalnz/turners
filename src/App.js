@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Claims from "./pages/Claims";
 import FaqClaim from './pages/FaqClaim';
-import Faq from "./pages/Faq";
+//import Faq from "./pages/Faq";
 import OurPolicies from "./pages/OurPolicies";
 import FaqOurPolicy from "./pages/FaqOurPolicy";
 import ManagePolicy from "./pages/ManagePolicy";
