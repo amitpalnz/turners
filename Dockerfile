@@ -1,9 +1,9 @@
 FROM node:18-alpine3.14 
 
+COPY package.json .
+
 COPY . .
 
-RUN npm install
+EXPOSE 3000
 
-EXPOSE 4000
 
-CMD ["nodemon", "index.js"]
