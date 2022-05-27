@@ -157,6 +157,7 @@ const OurPolicies = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
